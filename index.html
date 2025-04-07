@@ -7,6 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -212,9 +213,7 @@
             </div>
             
             <div class="product-display flex justify-center mb-20">
-                <div class="w-full md:w-2/3 product-rotate float-animation">
-                    <img src="https://www.apple.com/v/apple-vision-pro/a/images/overview/hero/hero_base__bcofud6brk2m_large.jpg" alt="Future Vision Pro" class="w-full h-auto">
-                </div>
+
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
@@ -242,6 +241,26 @@
             </div>
         </div>
     </section>
+
+    <main id="pageContainer" style="width: 100%; position: relative;">
+
+        <section id="page1" style="min-height: 100vh; width: 100%; position: relative; display: flex; align-items: center; justify-content: center; flex-direction: column; padding: 5vh 5vw; overflow: hidden; text-align: center;">
+            <div class="page-content" style="position: relative; z-index: 2; max-width: 900px; margin: 0 auto;">
+                <h1 style="font-size: clamp(2.5rem, 6vw, 5rem); font-weight: 600; color: #fff; margin-bottom: 1rem; line-height: 1.1; letter-spacing: -0.01em; text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);">Welcome to the Era of Spatial Computing</h1>
+            </div>
+            <video src="https://www.apple.com/105/media/us/apple-vision-pro/2023/7e268c13-eb22-493d-a860-f0637bacb569/anim/foundation-spatial-computing/large.mp4" autoplay loop muted playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1; opacity: 0.8; pointer-events: none;"></video>
+        </section>
+
+    
+    </main>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
 
     <!-- Specifications Table -->
     <section class="py-20 bg-gray-900 min-h-screen flex items-center">
@@ -346,7 +365,7 @@
     </section>
 
     <!-- Immersive Experience -->
-    <section class="parallax-section min-h-screen" style="background-image: url('https://www.apple.com/v/apple-vision-pro/a/images/overview/experience/immersive__dmb59l0q7v6q_large.jpg');">
+    <section class="parallax-section min-h-screen" style="background-image: url('     ');">
         <div class="absolute inset-0 bg-black bg-opacity-50"></div>
         <div class="relative z-10 min-h-screen flex items-center">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
@@ -429,7 +448,7 @@
                 <div class="md:w-1/2 fade-in">
                     <div class="product-display">
                         <div class="product-rotate float-animation">
-                            <img src="https://www.apple.com/v/apple-vision-pro/a/images/overview/hero/hero_endframe__dzong6k9h6uq_large.jpg" alt="Future Glasses Pro 2.0" class="w-full h-auto">
+                            <img src="https://cdn.wccftech.com/wp-content/uploads/2024/08/Apple-Vision-Pro-lenses.jpg" alt="Future Glasses Pro 2.0" class="w-full h-auto">
                         </div>
                     </div>
                 </div>
@@ -470,9 +489,8 @@
             </div>
             
             <div class="video-container fade-in" style="transition-delay: 0.6s;">
-                <video autoplay muted loop class="w-full">
-                    <source src="https://www.apple.com/105/media/us/apple-vision-pro/2023/7e268c13-eb22-493d-a860-f0637bacb569/anim/glass-pro-demo/large.mp4" type="video/mp4">
-                </video>
+                <img src="https://www.androidheadlines.com/wp-content/uploads/2024/01/Apple-Vision-Pro-gesture-control-jpg.webp" alt="">
+
                 <div class="video-overlay"></div>
             </div>
         </div>
@@ -505,7 +523,7 @@
                 <div class="fade-in" style="transition-delay: 0.2s;">
                     <div class="video-container">
                         <video autoplay muted loop class="w-full">
-                            <source src="https://www.apple.com/105/media/us/apple-vision-pro/2023/7e268c13-eb22-493d-a860-f0637bacb569/anim/display-technology/large.mp4" type="video/mp4">
+                            <source src="/105/media/us/apple-vision-pro/2024/6e1432b2-fe09-4113-a1af-f20987bcfeee/anim/experience-productivity-a/medium.mp4" type="video/mp4">
                         </video>
                         <div class="video-overlay"></div>
                     </div>
@@ -589,229 +607,200 @@
     <section id="comparison" class="py-20 px-4">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16 fade-in">
-                <h2 class="text-4xl font-bold mb-4">Detailed Comparison</h2>
+                <h2 class="text-4xl font-bold mb-4 text-white">Detailed Comparison</h2>
                 <p class="text-xl text-gray-300 max-w-3xl mx-auto">See how these products compare across key specifications</p>
             </div>
-            
-            <div class="glass-effect p-8 rounded-2xl fade-in">
-                <table class="spec-table">
-                    <thead>
-                        <tr>
-                            <th>Feature</th>
-                            <th>Future Vision Pro</th>
-                            <th>Future Glasses Pro</th>
-                            <th>Apple Vision Pro</th>
-                            <th>Meta Smart Glasses</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- Display -->
-                        <tr>
-                            <td>Display Technology</td>
-                            <td>Dual micro-OLED 8K <span class="comparison-badge best">Best</span></td>
-                            <td>Single micro-OLED 4K</td>
-                            <td>Dual micro-OLED 4K <span class="comparison-badge good">Good</span></td>
-                            <td>Single LED display</td>
-                        </tr>
-                        
-                        <!-- Resolution -->
-                        <tr>
-                            <td>Resolution</td>
-                            <td>7680 × 4320 per eye <span class="comparison-badge best">Best</span></td>
-                            <td>3840 × 2160</td>
-                            <td>3840 × 2160 per eye <span class="comparison-badge good">Good</span></td>
-                            <td>640 × 480</td>
-                        </tr>
-                        
-                        <!-- Processor -->
-                        <tr>
-                            <td>Processor</td>
-                            <td>M3 Neural Engine <span class="comparison-badge best">Best</span></td>
-                            <td>M2 Neural Engine</td>
-                            <td>M2 with R1 <span class="comparison-badge good">Good</span></td>
-                            <td>Qualcomm Snapdragon</td>
-                        </tr>
-                        
-                        <!-- Field of View -->
-                        <tr>
-                            <td>Field of View</td>
-                            <td>120° <span class="comparison-badge best">Best</span></td>
-                            <td>80°</td>
-                            <td>100° <span class="comparison-badge good">Good</span></td>
-                            <td>30°</td>
-                        </tr>
-                        
-                        <!-- Refresh Rate -->
-                        <tr>
-                            <td>Refresh Rate</td>
-                            <td>120Hz <span class="comparison-badge best">Best</span></td>
-                            <td>90Hz</td>
-                            <td>90Hz <span class="comparison-badge equal">Equal</span></td>
-                            <td>60Hz</td>
-                        </tr>
-                        
-                        <!-- Audio -->
-                        <tr>
-                            <td>Audio</td>
-                            <td>Spatial Audio with room adaptation <span class="comparison-badge best">Best</span></td>
-                            <td>Spatial Audio</td>
-                            <td>Spatial Audio <span class="comparison-badge equal">Equal</span></td>
-                            <td>Open-ear speakers</td>
-                        </tr>
-                        
-                        <!-- Controls -->
-                        <tr>
-                            <td>Controls</td>
-                            <td>Eye, hand, and voice <span class="comparison-badge best">Best</span></td>
-                            <td>Touch and voice</td>
-                            <td>Eye, hand, and voice <span class="comparison-badge equal">Equal</span></td>
-                            <td>Touch and voice</td>
-                        </tr>
-                        
-                        <!-- Battery Life -->
-                        <tr>
-                            <td>Battery Life</td>
-                            <td>6 hours</td>
-                            <td>18 hours <span class="comparison-badge best">Best</span></td>
-                            <td>2 hours (external battery) <span class="comparison-badge good">Good</span></td>
-                            <td>6 hours</td>
-                        </tr>
-                        
-                        <!-- Weight -->
-                        <tr>
-                            <td>Weight</td>
-                            <td>450g (headset)</td>
-                            <td>150g <span class="comparison-badge best">Best</span></td>
-                            <td>450g (headset) <span class="comparison-badge equal">Equal</span></td>
-                            <td>50g</td>
-                        </tr>
-                        
-                        <!-- Price -->
-                        <tr>
-                            <td>Price</td>
-                            <td>₹50,000</td>
-                            <td>₹45,000 <span class="comparison-badge best">Best</span></td>
-                            <td>$3,499 (~₹2.9L)</td>
-                            <td>$299 (~₹25,000) <span class="comparison-badge good">Good</span></td>
-                        </tr>
-                        
-                        <!-- Use Case -->
-                        <tr>
-                            <td>Primary Use Case</td>
-                            <td>Professional, immersive experiences <span class="comparison-badge best">Best</span></td>
-                            <td>Everyday AR</td>
-                            <td>Professional, immersive experiences <span class="comparison-badge equal">Equal</span></td>
-                            <td>Basic notifications, photos</td>
-                        </tr>
-                        
-                        <!-- AR/VR -->
-                        <tr>
-                            <td>AR/VR Capabilities</td>
-                            <td>Full AR/VR <span class="comparison-badge best">Best</span></td>
-                            <td>AR only</td>
-                            <td>Full AR/VR <span class="comparison-badge equal">Equal</span></td>
-                            <td>Basic AR</td>
-                        </tr>
-                        
-                        <!-- Ecosystem -->
-                        <tr>
-                            <td>Ecosystem</td>
-                            <td>Future OS apps <span class="comparison-badge good">Good</span></td>
-                            <td>Future OS apps</td>
-                            <td>Apple ecosystem <span class="comparison-badge best">Best</span></td>
-                            <td>Meta apps</td>
-                        </tr>
-                    </tbody>
-                </table>
+
+            <div class="bg-gray-800 bg-opacity-40 backdrop-filter backdrop-blur-lg border border-gray-700 border-opacity-50 rounded-2xl p-0 sm:p-0 shadow-xl fade-in overflow-hidden">
+                 <div class="overflow-x-auto p-6 sm:p-8"> <table class="w-full text-left text-gray-200 min-w-[768px]"> <thead class="text-xs text-gray-400 uppercase bg-gray-700 bg-opacity-50 sticky top-0 z-10">
+                            <tr>
+                                <th scope="col" class="px-6 py-3 whitespace-nowrap">Feature</th>
+                                <th scope="col" class="px-6 py-3 whitespace-nowrap">Future Vision Pro</th>
+                                <th scope="col" class="px-6 py-3 whitespace-nowrap">Future Glasses Pro</th>
+                                <th scope="col" class="px-6 py-3 whitespace-nowrap">Apple Vision Pro</th>
+                                <th scope="col" class="px-6 py-3 whitespace-nowrap">Meta Smart Glasses</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-700/50"> <tr class="hover:bg-gray-700/30 transition duration-150">
+                                <td class="px-6 py-4 font-semibold text-white whitespace-nowrap">Display Technology</td>
+                                <td class="px-6 py-4">Dual micro-OLED 8K <span class="comparison-badge best">Best</span></td>
+                                <td class="px-6 py-4">Single micro-OLED 4K</td>
+                                <td class="px-6 py-4">Dual micro-OLED 4K <span class="comparison-badge good">Good</span></td>
+                                <td class="px-6 py-4">Single LED display</td>
+                            </tr>
+                            <tr class="hover:bg-gray-700/30 transition duration-150">
+                                <td class="px-6 py-4 font-semibold text-white whitespace-nowrap">Resolution</td>
+                                <td class="px-6 py-4">7680 × 4320 per eye <span class="comparison-badge best">Best</span></td>
+                                <td class="px-6 py-4">3840 × 2160</td>
+                                <td class="px-6 py-4">3840 × 2160 per eye <span class="comparison-badge good">Good</span></td>
+                                <td class="px-6 py-4">640 × 480</td>
+                            </tr>
+                            <tr class="hover:bg-gray-700/30 transition duration-150">
+                                <td class="px-6 py-4 font-semibold text-white whitespace-nowrap">Processor</td>
+                                <td class="px-6 py-4">M3 Neural Engine <span class="comparison-badge best">Best</span></td>
+                                <td class="px-6 py-4">M2 Neural Engine</td>
+                                <td class="px-6 py-4">M2 with R1 <span class="comparison-badge good">Good</span></td>
+                                <td class="px-6 py-4">Qualcomm Snapdragon</td>
+                            </tr>
+                            <tr class="hover:bg-gray-700/30 transition duration-150">
+                                <td class="px-6 py-4 font-semibold text-white whitespace-nowrap">Field of View</td>
+                                <td class="px-6 py-4">120° <span class="comparison-badge best">Best</span></td>
+                                <td class="px-6 py-4">80°</td>
+                                <td class="px-6 py-4">100° <span class="comparison-badge good">Good</span></td>
+                                <td class="px-6 py-4">30°</td>
+                            </tr>
+                             <tr class="hover:bg-gray-700/30 transition duration-150">
+                                <td class="px-6 py-4 font-semibold text-white whitespace-nowrap">Refresh Rate</td>
+                                <td class="px-6 py-4">120Hz <span class="comparison-badge best">Best</span></td>
+                                <td class="px-6 py-4">90Hz</td>
+                                <td class="px-6 py-4">90Hz <span class="comparison-badge equal">Equal</span></td>
+                                <td class="px-6 py-4">60Hz</td>
+                            </tr>
+                            <tr class="hover:bg-gray-700/30 transition duration-150">
+                                <td class="px-6 py-4 font-semibold text-white whitespace-nowrap">Audio</td>
+                                <td class="px-6 py-4">Spatial Audio with room adaptation <span class="comparison-badge best">Best</span></td>
+                                <td class="px-6 py-4">Spatial Audio</td>
+                                <td class="px-6 py-4">Spatial Audio <span class="comparison-badge equal">Equal</span></td>
+                                <td class="px-6 py-4">Open-ear speakers</td>
+                            </tr>
+                            <tr class="hover:bg-gray-700/30 transition duration-150">
+                                <td class="px-6 py-4 font-semibold text-white whitespace-nowrap">Controls</td>
+                                <td class="px-6 py-4">Eye, hand, and voice <span class="comparison-badge best">Best</span></td>
+                                <td class="px-6 py-4">Touch and voice</td>
+                                <td class="px-6 py-4">Eye, hand, and voice <span class="comparison-badge equal">Equal</span></td>
+                                <td class="px-6 py-4">Touch and voice</td>
+                            </tr>
+                            <tr class="hover:bg-gray-700/30 transition duration-150">
+                                <td class="px-6 py-4 font-semibold text-white whitespace-nowrap">Battery Life</td>
+                                <td class="px-6 py-4">6 hours</td>
+                                <td class="px-6 py-4">18 hours <span class="comparison-badge best">Best</span></td>
+                                <td class="px-6 py-4">2 hours (external battery) <span class="comparison-badge good">Good</span></td>
+                                <td class="px-6 py-4">6 hours</td>
+                            </tr>
+                             <tr class="hover:bg-gray-700/30 transition duration-150">
+                                <td class="px-6 py-4 font-semibold text-white whitespace-nowrap">Weight</td>
+                                <td class="px-6 py-4">450g (headset)</td>
+                                <td class="px-6 py-4">150g <span class="comparison-badge best">Best</span></td>
+                                <td class="px-6 py-4">450g (headset) <span class="comparison-badge equal">Equal</span></td>
+                                <td class="px-6 py-4">50g</td>
+                            </tr>
+                             <tr class="hover:bg-gray-700/30 transition duration-150">
+                                <td class="px-6 py-4 font-semibold text-white whitespace-nowrap">Price</td>
+                                <td class="px-6 py-4">₹50,000</td>
+                                <td class="px-6 py-4">₹45,000 <span class="comparison-badge best">Best</span></td>
+                                <td class="px-6 py-4">$3,499 (~₹2.9L)</td> <td class="px-6 py-4">$299 (~₹25,000) <span class="comparison-badge good">Good</span></td>
+                            </tr>
+                             <tr class="hover:bg-gray-700/30 transition duration-150">
+                                <td class="px-6 py-4 font-semibold text-white whitespace-nowrap">Primary Use Case</td>
+                                <td class="px-6 py-4">Professional, immersive experiences <span class="comparison-badge best">Best</span></td>
+                                <td class="px-6 py-4">Everyday AR</td>
+                                <td class="px-6 py-4">Professional, immersive experiences <span class="comparison-badge equal">Equal</span></td>
+                                <td class="px-6 py-4">Basic notifications, photos</td>
+                            </tr>
+                            <tr class="hover:bg-gray-700/30 transition duration-150">
+                                <td class="px-6 py-4 font-semibold text-white whitespace-nowrap">AR/VR Capabilities</td>
+                                <td class="px-6 py-4">Full AR/VR <span class="comparison-badge best">Best</span></td>
+                                <td class="px-6 py-4">AR only</td>
+                                <td class="px-6 py-4">Full AR/VR <span class="comparison-badge equal">Equal</span></td>
+                                <td class="px-6 py-4">Basic AR</td>
+                            </tr>
+                            <tr class="hover:bg-gray-700/30 transition duration-150">
+                                <td class="px-6 py-4 font-semibold text-white whitespace-nowrap">Ecosystem</td>
+                                <td class="px-6 py-4">Future OS apps <span class="comparison-badge good">Good</span></td>
+                                <td class="px-6 py-4">Future OS apps</td>
+                                <td class="px-6 py-4">Apple ecosystem <span class="comparison-badge best">Best</span></td>
+                                <td class="px-6 py-4">Meta apps</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-            
-    <!-- Product Comparison -->
-    <section id="buy" class="py-20 bg-gray-900 min-h-screen flex items-center">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        </div>
+    </section>
+
+    <section id="buy" class="py-20 px-4"> <div class="max-w-7xl mx-auto">
             <div class="text-center mb-20 fade-in">
-                <h2 class="text-4xl md:text-5xl font-bold mb-4">Choose Your Future</h2>
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 text-white">Choose Your Future</h2>
                 <p class="text-xl text-gray-300 max-w-3xl mx-auto">Two extraordinary products. One incredible ecosystem.</p>
             </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                <div class="glass-effect p-8 rounded-2xl feature-card fade-in">
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-12">
+                <div class="bg-gray-800 bg-opacity-40 backdrop-filter backdrop-blur-lg border border-gray-700 border-opacity-50 rounded-2xl p-8 shadow-xl fade-in flex flex-col h-full">
                     <div class="flex justify-center mb-8">
-                        <img src="https://www.apple.com/v/apple-vision-pro/a/images/overview/hero/hero_base__bcofud6brk2m_large.jpg" alt="Future Vision Pro" class="h-48 float-animation">
+                        <img src="https://www.apple.com/newsroom/images/media/introducing-apple-vision-pro/Apple-WWDC23-Vision-Pro-glass-230605.jpg.og.jpg?202503102153" alt="Future Vision Pro" class="h-48 float-animation">
                     </div>
-                    <h3 class="text-2xl font-bold mb-2">Future Vision Pro</h3>
+                    <h3 class="text-2xl font-bold mb-2 text-white">Future Vision Pro</h3>
                     <p class="text-gray-300 mb-6">The ultimate spatial computing experience with our most advanced technologies.</p>
-                    <div class="text-3xl font-bold mb-6">₹50,000</div>
-                    <div class="mb-8">
-                        <div class="flex items-center mb-2">
-                            <i class="fas fa-check-circle text-green-400 mr-2"></i>
+                    <div class="text-3xl font-bold mb-6 text-white">₹50,000</div>
+                    <ul class="space-y-3 mb-8 text-gray-300">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-400 mr-3 w-5 text-center"></i>
                             <span>Ultra-high-resolution display system</span>
-                        </div>
-                        <div class="flex items-center mb-2">
-                            <i class="fas fa-check-circle text-green-400 mr-2"></i>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-400 mr-3 w-5 text-center"></i>
                             <span>M3 Neural Engine</span>
-                        </div>
-                        <div class="flex items-center mb-2">
-                            <i class="fas fa-check-circle text-green-400 mr-2"></i>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-400 mr-3 w-5 text-center"></i>
                             <span>Advanced Spatial Audio</span>
-                        </div>
-                        <div class="flex items-center mb-2">
-                            <i class="fas fa-check-circle text-green-400 mr-2"></i>
+                        </li>
+                         <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-400 mr-3 w-5 text-center"></i>
                             <span>Eye tracking and hand controls</span>
-                        </div>
-                        <div class="flex items-center mb-2">
-                            <i class="fas fa-check-circle text-green-400 mr-2"></i>
+                        </li>
+                         <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-400 mr-3 w-5 text-center"></i>
                             <span>Full AR/VR capabilities</span>
-                        </div>
-                        <div class="flex items-center mb-2">
-                            <i class="fas fa-check-circle text-green-400 mr-2"></i>
+                        </li>
+                         <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-400 mr-3 w-5 text-center"></i>
                             <span>3D camera for spatial photos</span>
-                        </div>
+                        </li>
+                    </ul>
+                    <a href="#" class="mt-auto w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg font-semibold inline-block text-center pulse transition-colors duration-200">Buy Now</a>
+                     </div>
+
+                <div class="bg-gray-800 bg-opacity-40 backdrop-filter backdrop-blur-lg border border-gray-700 border-opacity-50 rounded-2xl p-8 shadow-xl fade-in flex flex-col h-full" style="animation-delay: 0.2s;">
+                     <div class="flex justify-center mb-8">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3ShMaeSLjNvX3ccjyvLzRqxrVxA6srlgZfw&s" alt="Future Glasses Pro 2.0" class="h-48 float-animation">
                     </div>
-                    <a href="#" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full font-medium inline-block text-center pulse">Buy</a>
-                </div>
-                
-                <div class="glass-effect p-8 rounded-2xl feature-card fade-in" style="transition-delay: 0.2s;">
-                    <div class="flex justify-center mb-8">
-                        <img src="https://www.apple.com/v/apple-vision-pro/a/images/overview/hero/hero_endframe__dzong6k9h6uq_large.jpg" alt="Future Glasses Pro 2.0" class="h-48 float-animation">
-                    </div>
-                    <h3 class="text-2xl font-bold mb-2">Future Glasses Pro 2.0</h3>
+                    <h3 class="text-2xl font-bold mb-2 text-white">Future Glasses Pro 2.0</h3>
                     <p class="text-gray-300 mb-6">Our most advanced smart glasses with premium features at an incredible value.</p>
-                    <div class="text-3xl font-bold mb-6">₹45,000</div>
-                    <div class="mb-8">
-                        <div class="flex items-center mb-2">
-                            <i class="fas fa-check-circle text-green-400 mr-2"></i>
+                    <div class="text-3xl font-bold mb-6 text-white">₹45,000</div>
+                     <ul class="space-y-3 mb-8 text-gray-300">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-400 mr-3 w-5 text-center"></i>
                             <span>High-resolution micro-OLED displays</span>
-                        </div>
-                        <div class="flex items-center mb-2">
-                            <i class="fas fa-check-circle text-green-400 mr-2"></i>
-                            <span>F3 Neural Engine</span>
-                        </div>
-                        <div class="flex items-center mb-2">
-                            <i class="fas fa-check-circle text-green-400 mr-2"></i>
+                        </li>
+                         <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-400 mr-3 w-5 text-center"></i>
+                            <span>F3 Neural Engine</span> </li>
+                         <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-400 mr-3 w-5 text-center"></i>
                             <span>Spatial Audio</span>
-                        </div>
-                        <div class="flex items-center mb-2">
-                            <i class="fas fa-check-circle text-green-400 mr-2"></i>
+                        </li>
+                         <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-400 mr-3 w-5 text-center"></i>
                             <span>Voice and touch controls</span>
-                        </div>
-                        <div class="flex items-center mb-2">
-                            <i class="fas fa-check-circle text-green-400 mr-2"></i>
+                        </li>
+                         <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-400 mr-3 w-5 text-center"></i>
                             <span>Augmented Reality focus</span>
-                        </div>
-                        <div class="flex items-center mb-2">
-                            <i class="fas fa-check-circle text-green-400 mr-2"></i>
+                        </li>
+                         <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-400 mr-3 w-5 text-center"></i>
                             <span>Lightweight all-day design</span>
-                        </div>
-                    </div>
-                    <a href="#" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full font-medium inline-block text-center pulse">Buy</a>
-                </div>
+                        </li>
+                    </ul>
+                     <a href="#" class="mt-auto w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg font-semibold inline-block text-center pulse transition-colors duration-200">Buy Now</a>
+                     </div>
             </div>
-            
-            <div class="mt-20 text-center fade-in" style="transition-delay: 0.4s;">
-                <h3 class="text-2xl font-bold mb-6">Need help choosing?</h3>
-                <a href="#" class="inline-flex items-center text-blue-400 text-lg font-medium">
-                    Compare both products <i class="fas fa-chevron-right ml-2"></i>
-                </a>
+
+            <div class="mt-20 text-center fade-in" style="animation-delay: 0.4s;">
+                <h3 class="text-2xl font-bold mb-6 text-white">Need help choosing?</h3>
+                <a href="#comparison" class="inline-flex items-center text-blue-400 hover:text-blue-300 text-lg font-medium transition-colors duration-200">
+                    Compare both products <i class="fas fa-chevron-right ml-2 text-sm"></i> </a>
             </div>
         </div>
     </section>
@@ -879,6 +868,8 @@
             </div>
         </div>
     </footer>
+    <script src="script.js"></script>
+    
 
     <script>
         // Intersection Observer for fade-in animations
